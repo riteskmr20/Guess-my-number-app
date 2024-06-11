@@ -1,0 +1,20 @@
+--if want to add  shadow then in android then elevation is used.and for the Ios shadow property is used.
+
+--maxLength={} props is used to enter maximum length number in input container.
+
+
+<Pressable
+        style={({pressed})=> pressed ? [styles.buttonInnerContainer,styles.pressed]: styles.buttonInnerContainer}
+        onPress={pressHandler}
+        android_ripple={{ color: "#561414" }}
+      >
+        <Text style={styles.buttonText}>{children}</Text>
+</Pressable>
+
+this code explains that the if the press is occur then the 
+
+style: This prop is used to apply styles to the Pressable component.
+({ pressed }) =>: This is a function that takes an object as an argument. The object contains a pressed boolean property that indicates whether the Pressable component is currently being pressed.
+pressed ? [styles.buttonInnerContainer, styles.pressed] : styles.buttonInnerContainer:
+If pressed is true, the style applied will be a combination of styles.buttonInnerContainer and styles.pressed.
+If pressed is false, only styles.buttonInnerContainer will be applied.
