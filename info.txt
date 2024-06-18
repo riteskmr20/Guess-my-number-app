@@ -18,3 +18,6 @@ style: This prop is used to apply styles to the Pressable component.
 pressed ? [styles.buttonInnerContainer, styles.pressed] : styles.buttonInnerContainer:
 If pressed is true, the style applied will be a combination of styles.buttonInnerContainer and styles.pressed.
 If pressed is false, only styles.buttonInnerContainer will be applied.
+
+
+-->SafeAreaView is used for the content are visible below the notch og the phone screen.
